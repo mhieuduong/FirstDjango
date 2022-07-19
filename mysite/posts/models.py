@@ -2,13 +2,6 @@ from django.db import models
 
 
 class Post(models.Model):
-    """
-    id: key
-    title: varchar 255
-    description: text
-    created_at: datetime
-    updated_at: datetime
-    """
     id = models.BigAutoField(primary_key=True)
     title = models.CharField(max_length=255)
     description = models.TextField()
